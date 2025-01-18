@@ -1,0 +1,486 @@
+Array
+(
+    [place_id] => 4
+    [dest_name] => Kerela
+    [description] => Kerala is located in the southwest corner of India, and is bordered by the Arabian Sea to the east, and Karnataka and Tamil Nadu to the north, east, and south. The state is divided into three geographical regions: the highlands, midlands, and lowlands. The highlands slope down from the Western Ghats, which have peaks that are over 1,800 meters in height. The midlands are watered by streams and have rice fields, coconut trees, and arecanut trees. The lowlands have backwaters, lagoons, and coconut trees
+    [tip1] => be safe
+    [tip2] => be secure
+    [tip3] => very cold
+    [tip4] => night cold
+    [best_time] => december to february
+    [city] => Kochi
+    [states] => Karela
+    [budget] => 1500
+)
+Array
+(
+    [click_edit_btn] => true
+    [place_id] => 1
+                                            
+)
+Array
+(
+    [click_edit_btn] => true
+    [place_id] => 1
+                                            
+)
+Array
+(
+    [click_edit_btn] => true
+    [place_id] => 4
+                                            
+)
+Array
+(
+    [click_edit_btn] => true
+    [place_id] => 1
+                                            
+)
+Array
+(
+    [click_edit_btn] => true
+    [place_id] => 1
+                                            
+)
+Array
+(
+    [click_edit_btn] => true
+    [place_id] => 1
+                                            
+)
+Array
+(
+    [click_edit_btn] => true
+    [place_id] => 1
+                                            
+)
+Array
+(
+    [click_edit_btn] => true
+    [place_id] => 4
+                                            
+)
+Array
+(
+    [click_edit_btn] => true
+    [place_id] => 1
+                                            
+)
+Array
+(
+    [click_edit_btn] => true
+    [place_id] => 1
+                                            
+)
+Array
+(
+    [click_edit_btn] => true
+    [place_id] => 1
+                                            
+)
+Array
+(
+    [click_edit_btn] => true
+    [place_id] => 1
+                                            
+)
+Array
+(
+    [click_edit_btn] => true
+    [place_id] => 4
+                                            
+)
+Array
+(
+    [click_edit_btn] => true
+    [place_id] => 1
+                                            
+)
+Array
+(
+    [click_edit_btn] => true
+    [place_id] => 4
+                                            
+)
+Array
+(
+    [click_edit_btn] => true
+    [place_id] => 4
+                                            
+)
+Array
+(
+    [click_edit_btn] => true
+    [place_id] => 1
+                                            
+)
+Array
+(
+    [click_edit_btn] => true
+    [place_id] => 1
+                                            
+)
+Array
+(
+    [place_id] => 1
+    [dest_name] => GOA
+    [description] => Goa is an nice place
+    [tip1] => be safe
+    [tip2] => be secure
+    [tip3] => very cold
+    [tip4] => night cold
+    [best_time] => october to deccember
+    [city] => panji
+    [states] => Goa
+    [budget] => 10500
+    [update_data] => 
+)
+Array
+(
+    [click_edit_btn] => true
+    [place_id] => 4
+                                            
+)
+Array
+(
+    [place_id] => 4
+    [dest_name] => Kerela
+    [description] => Kerala is located in the southwest corner of India, and is bordered by the Arabian Sea to the east, and Karnataka and Tamil Nadu to the north, east, and south. The state is divided into three geographical regions: the highlands, midlands, and lowlands. The highlands slope down from the Western Ghats, which have peaks that are over 1,800 meters in height. The midlands are watered by streams and have rice fields, coconut trees, and arecanut trees. The lowlands have backwaters, lagoons, and coconut trees
+    [tip1] => be safe
+    [tip2] => be secure
+    [tip3] => very cold
+    [tip4] => night cold
+    [best_time] => december to february
+    [city] => Kochi
+    [states] => Kerela
+    [budget] => 1000
+    [update_data] => 
+)
+Array
+(
+    [click_edit_btn] => true
+    [place_id] => 4
+                                            
+)
+Array
+(
+    [place_id] => 4
+    [dest_name] => Kerela
+    [description] => Kerala is located in the southwest corner of India, and is bordered by the Arabian Sea to the east, and Karnataka and Tamil Nadu to the north, east, and south. The state is divided into three geographical regions: the highlands, midlands, and lowlands. The highlands slope down from the Western Ghats, which have peaks that are over 1,800 meters in height. The midlands are watered by streams and have rice fields, coconut trees, and arecanut trees. The lowlands have backwaters, lagoons, and coconut trees
+    [tip1] => be safe and happy
+    [tip2] => be secure
+    [tip3] => very cold
+    [tip4] => night cold
+    [best_time] => december to february
+    [city] => Kochi
+    [states] => Kerela
+    [budget] => 1000
+    [update_data] => 
+)
+Array
+(
+    [click_edit_btn] => true
+    [place_id] => 4
+                                            
+)
+Array
+(
+    [place_id] => 4
+    [dest_name] => Kerela
+    [description] => Kerala is located in the southwest corner of India, and is bordered by the Arabian Sea to the east, and Karnataka and Tamil Nadu to the north, east, and south. The state is divided into three geographical regions: the highlands, midlands, and lowlands. The highlands slope down from the Western Ghats, which have peaks that are over 1,800 meters in height. The midlands are watered by streams and have rice fields, coconut trees, and arecanut trees. The lowlands have backwaters, lagoons, and coconut trees
+    [tip1] => be safe and happy
+    [tip2] => be secure
+    [tip3] => very cold
+    [tip4] => night cold
+    [best_time] => december to february
+    [city] => Kochi
+    [states] => Kerala
+    [budget] => 1000
+    [update_data] => 
+)
+Array
+(
+    [click_edit_btn] => true
+    [place_id] => 1
+                                            
+)
+Array
+(
+    [movie_title] => Go  Goa Gone
+    [description] => Go Goa Gone superb film
+    [dest_1] => goa 1
+    [description1] => goa 2
+    [city1] => panji
+    [states1] => goa
+    [dest_2] => goa2
+    [description2] => goa 2
+    [city2] => panji
+    [states2] => goa
+    [dest_3] => goa3
+    [description3] => goa3
+    [city3] => panji
+    [states3] => goa
+    [dest_4] => goa 4
+    [description4] => goa 4
+    [city4] => panji
+    [states4] => goa
+    [budget] => 50000
+    [save_data] => 
+)
+Array
+(
+    [movie_title] => Go  Goa Gone
+    [description] => sadsadssad
+    [dest_1] => goa 1
+    [description1] => sfsdsdf
+    [city1] => panji
+    [states1] => goa
+    [dest_2] => goa2
+    [description2] => dsfdsfsd
+    [city2] => panji
+    [states2] => goa
+    [dest_3] => goa3
+    [description3] => sdfdsf
+    [city3] => panji
+    [states3] => goa
+    [dest_4] => goa 4
+    [description4] => sdfdsf
+    [city4] => panji
+    [states4] => goa
+    [budget] => 50000
+    [save_data] => 
+)
+Array
+(
+    [movie_title] => Go  Goa Gone
+    [description] => sadsadssad
+    [dest_1] => goa 1
+    [description1] => sfsdsdf
+    [city1] => panji
+    [states1] => goa
+    [dest_2] => goa2
+    [description2] => dsfdsfsd
+    [city2] => panji
+    [states2] => goa
+    [dest_3] => goa3
+    [description3] => sdfdsf
+    [city3] => panji
+    [states3] => goa
+    [dest_4] => goa 4
+    [description4] => sdfdsf
+    [city4] => panji
+    [states4] => goa
+    [budget] => 50000
+    [save_data] => 
+)
+Array
+(
+    [click_edit_btn] => true
+    [movie_id_] => 1
+                                            
+)
+Array
+(
+    [click_edit_btn] => true
+    [movie_id] => 1
+                                            
+)
+Array
+(
+    [click_edit_btn] => true
+    [movie_id] => 1
+                                            
+)
+Array
+(
+    [click_edit_btn] => true
+    [movie_id] => 1
+                                            
+)
+Array
+(
+    [movie_id] => 1
+    [movie_title] => Go  Goa Gone
+    [description] => sadsadssad
+    [dest_1] => goa 1
+    [description1] => sfsdsdf
+    [city1] => panji
+    [states1] => goa
+    [dest_2] => goa2
+    [description2] => dsfdsfsd
+    [city2] => panji
+    [states2] => goa
+    [dest_3] => goa3
+    [description3] => sdfdsf
+    [city3] => panji
+    [states3] => goa
+    [dest_4] => goa 4
+    [description4] => sdfdsf
+    [city4] => panji
+    [states4] => goa
+    [budget] => 5000
+    [update_data] => 
+)
+Array
+(
+    [click_edit_btn] => true
+    [movie_id] => 1
+                                            
+)
+Array
+(
+    [movie_id] => 1
+    [movie_title] => Go  Goa Gone
+    [description] => sadsadssad
+    [dest_1] => goa 10
+    [description1] => sfsdsdf
+    [city1] => panji
+    [states1] => goa
+    [dest_2] => goa2
+    [description2] => dsfdsfsd
+    [city2] => panji
+    [states2] => goa
+    [dest_3] => goa3
+    [description3] => sdfdsf
+    [city3] => panji
+    [states3] => goa
+    [dest_4] => goa 4
+    [description4] => sdfdsf
+    [city4] => panji
+    [states4] => goa
+    [budget] => 50000
+    [update_data] => 
+)
+Array
+(
+    [dest_name] => Laxmi vilas palace
+    [description] => sddssdfssfsfsdfdsfsfsdfsdfsdfdsfdf
+    [tip1] => be safe
+    [tip2] => be secure
+    [tip3] => very cold
+    [tip4] => night cold
+    [best_time] => december to february
+    [city] => Vadodara
+    [states] => Gujarat
+    [budget] => 1000
+    [save_data] => 
+)
+Array
+(
+    [movie_title] => Go  Goa Gone
+    [description] => asdsdsads
+    [dest_1] => goa 1
+    [description1] => sasad
+    [city1] => panji
+    [states1] => goa
+    [dest_2] => goa2
+    [description2] => sasda
+    [city2] => panji
+    [states2] => goa
+    [dest_3] => goa3
+    [description3] => assad
+    [city3] => panji
+    [states3] => goa
+    [dest_4] => goa 4
+    [description4] => asdasad
+    [city4] => panji
+    [states4] => goa
+    [budget] => 1500
+    [save_data] => 
+)
+Array
+(
+    [click_edit_btn] => true
+    [movie_id] => 1
+                                            
+)
+Array
+(
+    [movie_id] => 1
+    [movie_title] => Go  Goa Gone
+    [description] => asdsdsads
+    [dest_1] => goa 1
+    [description1] => sasad
+    [city1] => panji
+    [states1] => goa
+    [dest_2] => goa2
+    [description2] => sasda
+    [city2] => panji
+    [states2] => goa
+    [dest_3] => goa3
+    [description3] => assad
+    [city3] => panji
+    [states3] => goa
+    [dest_4] => goa 4
+    [description4] => asdasad
+    [city4] => panji
+    [states4] => goa
+    [budget] => 100
+    [update_data] => 
+)
+Array
+(
+    [click_edit_btn] => true
+    [movie_id] => 1
+                                            
+)
+Array
+(
+    [movie_id] => 1
+    [movie_title] => Go  Goa Gone
+    [description] => asdsdsads
+    [dest_1] => goa 1
+    [description1] => sasad
+    [city1] => panji
+    [states1] => goa
+    [dest_2] => goa2
+    [description2] => sasda
+    [city2] => panji
+    [states2] => goa
+    [dest_3] => goa3
+    [description3] => assad
+    [city3] => panji
+    [states3] => goa
+    [dest_4] => goa 4
+    [description4] => asdasad
+    [city4] => panji
+    [states4] => goa
+    [budget] => 150
+    [update_data] => 
+)
+Array
+(
+    [click_edit_btn] => true
+    [movie_id] => 1
+                                            
+)
+Array
+(
+    [movie_id] => 1
+    [movie_title] => Go  Goa Gone
+    [description] => asdsdsads
+    [dest_1] => goa 1
+    [description1] => sasad
+    [city1] => panji
+    [states1] => goa
+    [dest_2] => goa2
+    [description2] => sasda
+    [city2] => panji
+    [states2] => goa
+    [dest_3] => goa3
+    [description3] => assad
+    [city3] => panji
+    [states3] => goa
+    [dest_4] => goa 4
+    [description4] => asdasad
+    [city4] => panji
+    [states4] => goa
+    [budget] => 150
+    [update_data] => 
+)
+Array
+(
+    [click_edit_btn] => true
+    [movie_id] => 1
+                                            
+)
