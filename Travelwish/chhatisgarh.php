@@ -70,7 +70,7 @@
 
     $connection = mysqli_connect("$servername" , "$username", "$password" , "$dbname");
 
-    $fetch_query = "SELECT * FROM destination WHERE states='Chhatisgrah'";
+    $fetch_query = "SELECT * FROM destination WHERE states='Chhattisgarh'";
     $fetch_query_run = mysqli_query($connection , $fetch_query);
 
 
