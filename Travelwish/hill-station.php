@@ -1,3 +1,4 @@
+<?php include 'navbar.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,18 +10,7 @@
     <title>Mountains</title>
 </head>
 <body>
-<nav class="first">
-  <h1 class="fheading">TravelWish</h1>
-  <ul class="flist">
-    <a href="index.php"><li>Home</li></a>
-    <a href="explore.php"><li>Explore</li></a>
-    <a href="about.php"><li>About Us</li></a>
-    <a href="blog.php"><li>Blogs</li></a>
-    <a href="contact-us.php"><li>Contact Us</li></a>
-  </ul>
-  <button class="reg">Sign up</button>
-  
-</nav> 
+
 
 <section>
     <div class="carousel">

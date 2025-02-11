@@ -1,3 +1,4 @@
+<?php include 'navbar.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,18 +12,7 @@
     <title>Places</title>
 </head>
 <body>
-<nav class="first">
-  <h1 class="fheading">TravelWish</h1>
-  <ul class="flist">
-    <a href="index.php"><li>Home</li></a>
-    <a href="explore.php"><li>Explore</li></a>
-    <a href="about.php"><li>About Us</li></a>
-    <a href="blog.php"><li>Blogs</li></a>
-    <a href="contact-us.php"><li>Contact Us</li></a>
-  </ul>
-  <button class="reg">Sign up</button>
-  
-</nav> 
+
 
 <hr>
 <?php 
@@ -86,7 +76,7 @@
           <h1><?php echo $row['dest_name']; ?></h1>
             <hr>
             <p><?php echo $row['description']; ?></p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa ipsum at assumenda fuga minus et officiis, aliquam unde necessitatibus deleniti nihil libero vitae quod distinctio quae aspernatur delectus quisquam suscipit!</p>
+           
             </div>
           <div class="tips-place">
             <h2>Tips</h2>

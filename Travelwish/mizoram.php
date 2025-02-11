@@ -1,3 +1,4 @@
+<?php include 'navbar.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,16 +10,7 @@
     <title>Delhi</title>
 </head>
 <body>
-<nav class="first">
-  <h1 class="fheading">TravelWish</h1>
-  <ul class="flist">
-    <a href="index.php"><li>Home</li></a>
-    <a href="explore.php"><li>Explore</li></a>
-    <a href="about.php"><li>About Us</li></a>
-    <a href="blog.php"><li>Blogs</li></a>
-  </ul>
-  <button class="reg">Sign up</button>
-</nav> 
+
 
 
 <section>
@@ -76,29 +68,42 @@
 
                            
 
-        while($row = mysqli_fetch_array($fetch_query_run))
-        {
-           ?>
-             <div class="col-md-4">
-                 <div class="card" style="width: 25rem;">
-                  <a href="">
-                 <?php
-                    $json = $row['fileImg'];
-                    $image = json_decode($json, true);
-                    $images = $image['0'];
-                  ?>
-                   <img src="uploads/<?php echo $images;  ?>" class="card-img-top" alt="...">
-                   </a> 
-                   <div class="card-body">
-                     <h5 class="card-title"><?php echo $row['dest_name'];?></h5>
-                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                     <a href="place.php?place=<?php echo $row['place_id'] ?>" class="btn btn-primary">Visit Us</a>
-                   </div>
-                 </div>
-             </div>
+    while ($row = mysqli_fetch_array($fetch_query_run)) {
+      ?>
+      <div class="col-md-4">
+        <div class="card" style="width: 25rem;">
+          <a href="place.php?place=<?php echo $row['place_id'] ?>">
+            <?php
+            $json = $row['fileImg'];
+            $image = json_decode($json, true);
+            $images = $image['0'];
+            ?>
+            <img src="uploads/<?php echo $images; ?>" class="card-img-top" alt="...">
+          </a>
+          <div class="wrapper">
+              <a href="place.php?place=<?php echo $row['place_id']; ?>"><span>Know More!</span></a>
+         </div>
+          <div class="card-body">
+            <h5 class="card-title"><?php echo $row['dest_name']; ?></h5>
+            <?php
+            
+            $sql = "SELECT LEFT(description, 140) AS short_description FROM destination WHERE place_id = " . intval($row['place_id']);
+            $result = $connection->query($sql);
+
+            if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            echo ($row['short_description']); // Convert new lines to <br> for HTML display
+            } else {
+            echo "No data found";
+            }
+            
+            ?>
+          </div>          
+      </div>
+    </div>
     <?php
-          }
-    ?>      
+    }
+    ?>
         <div class="col-md-4">
         <div class="card" style="width: 25rem;">
               <img src="images/india-gate.jpg" class="card-img-top" alt="...">

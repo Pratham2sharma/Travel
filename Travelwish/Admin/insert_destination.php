@@ -108,21 +108,30 @@
     $budget = $_POST["budget"];
 
 
+    $stmt = $connection->prepare("UPDATE destination SET dest_name=?, description=?, tip1=?, tip2=?, tip3=?, tip4=?, best_time=?, city=?, states=?, budget=? WHERE place_id='$id'");
+
+   // Bind parameters (s = string, i = integer, d = double)
+    $stmt->bind_param("sssssssssi", $place_name  , $description , $tip1, $tip2 , $tip3 , $tip4, $time_visit ,$city , $state , $budget);
+
+
+    //$update_query = "UPDATE  destination SET dest_name='$place_name', description='$description', tip1='$tip1', tip2='$tip2', tip3='$tip3', tip4='$tip4', best_time='$time_visit', city='$city', states='$state', budget='$budget' WHERE place_id='$id'";
+    //$update_query_run = mysqli_query($connection , $update_query);
+
+    if ($stmt->execute()) {
+      $_SESSION["status"] = "Data Updated Succesfully";
+      header("location: manage_destination.php");
+  } else {
+    $_SESSION["status"] = "Data Updation failed";
+      echo "Error: " . $stmt->error;
+
+  }
+
+ 
+
+  // Step 6: Close the connection
+  $stmt->close();
+  $conn->close();
     
-
-    $update_query = "UPDATE  destination SET dest_name='$place_name', description='$description', tip1='$tip1', tip2='$tip2', tip3='$tip3', tip4='$tip4', best_time='$time_visit', city='$city', states='$state', budget='$budget' WHERE place_id='$id'";
-    $update_query_run = mysqli_query($connection , $update_query);
-
-    if($update_query_run)
-    {
-        $_SESSION["status"] = "Data Updated Succesfully";
-        header("location: manage_destination.php");
-    }
-    else
-    {
-        $_SESSION["status"] = "Data Updation Failed";
-        header("location: manage_destination.php");
-    }
   }
 
 

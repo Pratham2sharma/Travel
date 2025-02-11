@@ -1,3 +1,8 @@
+<?php 
+include 'navbar.php'; 
+
+   
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,18 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Goa</title>
+   
 </head>
 <body>
-<nav class="first">
-  <h1 class="fheading">TravelWish</h1>
-  <ul class="flist">
-    <a href="index.php"><li>Home</li></a>
-    <a href="explore.php"><li>Explore</li></a>
-    <a href="about.php"><li>About Us</li></a>
-    <a href="blog.php"><li>Blogs</li></a>
-  </ul>
-  <button class="reg">Sign up</button>
-</nav> 
 
 
 <section>
@@ -68,59 +64,111 @@
     <?php 
      require 'DB.php';
 
+
     $connection = mysqli_connect("$servername" , "$username", "$password" , "$dbname");
 
-    $fetch_query = "SELECT * FROM destination WHERE states='Goa'";
+    $per_page_record = 6;  // Number of entries to show in a page.   
+// Look for a GET variable page if not found default is 1.        
+if (isset($_GET["page"])) {    
+    $page  = $_GET["page"];    
+}    
+else {    
+  $page=1;    
+}    
+
+$start_from = ($page-1) * $per_page_record;     
+
+
+    $fetch_query = "SELECT * FROM destination WHERE states='Goa' LIMIT $start_from, $per_page_record";
     $fetch_query_run = mysqli_query($connection , $fetch_query);
 
 
                            
 
-        while($row = mysqli_fetch_array($fetch_query_run))
-        {
-           ?>
-             <div class="col-md-4">
-                 <div class="card" style="width: 25rem;">
-                  <a href="">
-                 <?php
-                    $json = $row['fileImg'];
-                    $image = json_decode($json, true);
-                    $images = $image['0'];
-                  ?>
-                   <img src="uploads/<?php echo $images;  ?>" class="card-img-top" alt="...">
-                   </a> 
-                   <div class="card-body">
-                     <h5 class="card-title"><?php echo $row['dest_name'];?></h5>
-                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                     <a href="place.php?place=<?php echo $row['place_id'] ?>" class="btn btn-primary">Visit Us</a>
-                   </div>
-                 </div>
-             </div>
+    while ($row = mysqli_fetch_array($fetch_query_run)) {
+      ?>
+      <div class="col-md-4">
+        <div class="card" style="width: 25rem;">
+          <a href="place.php?place=<?php echo $row['place_id'] ?>">
+            <?php
+            $json = $row['fileImg'];
+            $image = json_decode($json, true);
+            $images = $image['0'];
+            ?>
+            <img src="uploads/<?php echo $images; ?>" class="card-img-top" alt="...">
+          </a>
+          <div class="wrapper">
+              <a href="place.php?place=<?php echo $row['place_id']; ?>"><span>Know More!</span></a>
+         </div>
+          <div class="card-body">
+            <h5 class="card-title"><?php echo $row['dest_name']; ?></h5>
+            <?php
+            
+            $sql = "SELECT LEFT(description, 140) AS short_description FROM destination WHERE place_id = " . intval($row['place_id']);
+            $result = $connection->query($sql);
+
+            if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            echo ($row['short_description']); // Convert new lines to <br> for HTML display
+            } else {
+            echo "No data found";
+            }
+            
+            ?>
+          </div>          
+      </div>
+    </div>
     <?php
-          }
-    ?>      
-        <div class="col-md-4">
-        <div class="card" style="width: 25rem;">
-              <img src="images/india-gate.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Visit Us</a>
-              </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-        <div class="card" style="width: 25rem;">
-              <img src="images/india-gate.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Visit Us</a>
-              </div>
-            </div>
-        </div>
+    }
+    ?>
+
+        
+      
     </div>
 </div>
+
+<div class="pagination">    
+      <?php  
+        $query = "SELECT COUNT(*) FROM destination WHERE states='Goa' ";     
+        $rs_result = mysqli_query($connection, $query);     
+        $row = mysqli_fetch_row($rs_result);     
+        $total_records = $row[0];     
+          
+    echo "</br>";     
+        // Number of pages required.   
+        $total_pages = ceil($total_records / $per_page_record);     
+        $pagLink = "";       
+      
+        if($page>=2){   
+            echo "<a href='goa.php?page=".($page-1)."'>  Prev </a>";   
+        }       
+                   
+        for ($i=1; $i<=$total_pages; $i++) {   
+          if ($i == $page) {   
+              $pagLink .= "<a class = 'active' href='goa.php?page="  
+                                                .$i."'>".$i." </a>";   
+          }               
+          else  {   
+              $pagLink .= "<a href='goa.php?page=".$i."'>   
+                                                ".$i." </a>";     
+          }   
+        };     
+        echo $pagLink;   
+  
+        if($page<$total_pages){   
+            echo "<a href='goa.php?page=".($page+1)."'>  Next </a>";   
+        }   
+  
+      ?>    
+      </div> 
+      
+      <div class="inline-pagination">   
+      <input class="input" id="page" type="number" min="1" max="<?php echo $total_pages?>"   
+      placeholder="<?php echo $page."/".$total_pages; ?>" required>   
+      <button class="pagination-btn" onClick="go2Page();">Go</button>   
+     </div>    
+
+
 
     <!-- Footer Start -->
 <div class="footer">
@@ -219,7 +267,14 @@
   </div>
 </div>
 <!-- Footer End -->
-
+<script>   
+    function go2Page()   
+    {   
+        var page = document.getElementById("page").value;   
+        page = ((page><?php echo $total_pages; ?>)?<?php echo $total_pages; ?>:((page<1)?1:page));   
+        window.location.href = 'goa.php?page='+page;   
+    }   
+  </script>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

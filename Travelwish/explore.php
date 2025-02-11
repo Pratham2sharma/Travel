@@ -1,3 +1,4 @@
+<?php include 'navbar.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,18 +10,7 @@
     <title>Explore</title>
 </head>
 <body>
-<nav class="first">
-  <h1 class="fheading">TravelWish</h1>
-  <ul class="flist">
-    <a href="index.php"><li>Home</li></a>
-    <a href="explore.php"><li>Explore</li></a>
-    <a href="about.php"><li>About Us</li></a>
-    <a href="blog.php"><li>Blogs</li></a>
-    <a href="contact-us.php"><li>Contact Us</li></a>
-  </ul>
-  <button class="reg">Sign up</button>
-  
-</nav> 
+
 <section>
     <div class="carousel">
          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -228,7 +218,7 @@
 
     <div class="row">
         <div class="col">
-        <a href="chhatisgrah.php"><img src="images/chattisgarh.jpg" alt=""></a>
+        <a href="chhatisgarh.php"><img src="images/chattisgarh.jpg" alt=""></a>
         <h2>Chhatisgarh</h2>
         </div>
         <div class="col">
