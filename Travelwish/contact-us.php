@@ -24,15 +24,15 @@
               <h2>Contact Us</h2>
               <div class="contact">
                 <div class="form-container">
-                  <form class="form">
+                  <form action="mail.php" class="form" method="post">
                     <div class="username">
-                      <input type="text" placeholder="Enter your Name">
+                      <input type="text" name="name" placeholder="Enter your Name">
                     </div>
                    <div class="useremail">
-                      <input type="email" placeholder="Enter your email" required>
+                      <input type="email" name="email" placeholder="Enter your email" required>
                     </div>
                     <div class="usermessage">
-                      <textarea placeholder="Enter your message" required></textarea>
+                      <textarea placeholder="Enter your message" name="message" required></textarea>
                     </div>
                     <div class="usersubmit">
                       <input type="submit" value="Contact Us">

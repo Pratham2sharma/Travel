@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Delhi</title>
+    <title>Mizoram</title>
 </head>
 <body>
 
@@ -24,19 +24,19 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="images/carousel-1.jpeg" class="d-block w-100" alt="...">
-              <h1 class="banner-title">Explore New Delhi</h1>
+              <h1 class="banner-title">Explore Mizoram</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In veritatis quia tempore officia voluptate vero sapiente accusantium exercitationem, non esse! Modi repellendus mollitia recusandae ex vel inventore quod odio repudiandae.</p>
               <button>Explore Now</button>
             </div>
             <div class="carousel-item">
               <img src="images/carousel-2.jpeg" class="d-block w-100" alt="...">
-              <h1 class="banner-title">Explore Delhi Forts</h1>
+              <h1 class="banner-title">Explore Mizoram</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In veritatis quia tempore officia voluptate vero sapiente accusantium exercitationem, non esse! Modi repellendus mollitia recusandae ex vel inventore quod odio repudiandae.</p>
               <button>Explore Now</button>
             </div>
             <div class="carousel-item">
               <img src="images/carousel-3.jpg" class="d-block w-100" alt="...">
-              <h1 class="banner-title">Explore Delhi Palaces</h1>
+              <h1 class="banner-title">Explore Mizoram</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In veritatis quia tempore officia voluptate vero sapiente accusantium exercitationem, non esse! Modi repellendus mollitia recusandae ex vel inventore quod odio repudiandae.</p>
               <button>Explore Now</button>
             </div>
@@ -53,7 +53,7 @@
     </div>
 </section>
 
-<h1 class="state-head">Top Places to Visit in New Delhi</h1>
+<h1 class="state-head">Top Places to Visit in Mizoram</h1>
 
 <div class="state">
     <div class="row">
@@ -62,7 +62,19 @@
 
     $connection = mysqli_connect("$servername" , "$username", "$password" , "$dbname");
 
-    $fetch_query = "SELECT * FROM destination WHERE states='Mizoram'";
+    $per_page_record = 6;  // Number of entries to show in a page.   
+// Look for a GET variable page if not found default is 1.        
+if (isset($_GET["page"])) {    
+    $page  = $_GET["page"];    
+}    
+else {    
+  $page=1;    
+}    
+
+$start_from = ($page-1) * $per_page_record;     
+
+
+    $fetch_query = "SELECT * FROM destination WHERE states='Mizoram' LIMIT $start_from, $per_page_record";
     $fetch_query_run = mysqli_query($connection , $fetch_query);
 
 
@@ -104,28 +116,51 @@
     <?php
     }
     ?>
-        <div class="col-md-4">
-        <div class="card" style="width: 25rem;">
-              <img src="images/india-gate.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Visit Us</a>
-              </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-        <div class="card" style="width: 25rem;">
-              <img src="images/india-gate.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Visit Us</a>
-              </div>
-            </div>
-        </div>
+        
     </div>
 </div>
+
+
+<div class="pagination">    
+      <?php  
+        $query = "SELECT COUNT(*) FROM destination WHERE states='Mizoram' ";     
+        $rs_result = mysqli_query($connection, $query);     
+        $row = mysqli_fetch_row($rs_result);     
+        $total_records = $row[0];     
+          
+    echo "</br>";     
+        // Number of pages required.   
+        $total_pages = ceil($total_records / $per_page_record);     
+        $pagLink = "";       
+      
+        if($page>=2){   
+            echo "<a href='mizoram.php?page=".($page-1)."'>  Prev </a>";   
+        }       
+                   
+        for ($i=1; $i<=$total_pages; $i++) {   
+          if ($i == $page) {   
+              $pagLink .= "<a class = 'active' href='mizoram.php?page="  
+                                                .$i."'>".$i." </a>";   
+          }               
+          else  {   
+              $pagLink .= "<a href='mizoram.php?page=".$i."'>   
+                                                ".$i." </a>";     
+          }   
+        };     
+        echo $pagLink;   
+  
+        if($page<$total_pages){   
+            echo "<a href='mizoram.php?page=".($page+1)."'>  Next </a>";   
+        }   
+  
+      ?>    
+      </div> 
+      
+      <div class="inline-pagination">   
+      <input class="input" id="page" type="number" min="1" max="<?php echo $total_pages?>"   
+      placeholder="<?php echo $page."/".$total_pages; ?>" required>   
+      <button class="pagination-btn" onClick="go2Page();">Go</button>   
+     </div>    
 
     <!-- Footer Start -->
 <div class="footer">
