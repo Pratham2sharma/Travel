@@ -374,6 +374,49 @@ background-color: skyblue;
 }
 
 
+.slider-container {
+  width: 80%;
+  overflow: hidden;
+  position: relative;
+  margin-left: 10%;
+  height: 700px;
+  margin-top: 10%;
+}
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.card-slider{
+  min-width: 300px;
+  padding: 20px;
+  background: white;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+.buttons button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.related-h1{
+  font-family: "Urbanist", serif;
+  
+}
+
+
 /* -------state places-------- */
 
 .state-head{

@@ -66,26 +66,25 @@
              $fetch_query_run = mysqli_query($connection , $fetch_query);
 
                          
-               while($row = mysqli_fetch_assoc($fetch_query_run))
-              {
+             $current_destination = mysqli_fetch_assoc($fetch_query_run);
               ?>
 <div class="place-body">
     <div class="row">
      <div class="col-md-6">
       <div class="place-title">
-          <h1><?php echo $row['dest_name']; ?></h1>
+          <h1><?php echo htmlspecialchars($current_destination['dest_name']); ?></h1>
             <hr>
-            <p><?php echo $row['description']; ?></p>
+            <p><?php echo $current_destination['description']; ?></p>
            
             </div>
           <div class="tips-place">
             <h2>Tips</h2>
             <hr>
             <ul class="tips">
-            <li><?php echo $row['tip1']; ?> </li>
-                <li><?php echo $row['tip2']; ?></li>
-                <li><?php echo $row['tip3']; ?></li>
-                <li><?php echo $row['tip4']; ?></li>
+            <li><?php echo htmlspecialchars($current_destination['tip1']); ?> </li>
+                <li><?php echo htmlspecialchars($current_destination['tip2']); ?></li>
+                <li><?php echo htmlspecialchars($current_destination['tip3']); ?></li>
+                <li><?php echo htmlspecialchars($current_destination['tip4']); ?></li>
             </ul>
             </div> 
     </div>
@@ -102,7 +101,7 @@
           <div class="best-time">
             <h1>Best Time to Visit</h2>
             <hr>
-            <p><?php echo $row['best_time']; ?></p>
+            <p><?php echo $current_destination['best_time']; ?></p>
           </div>
           <div class="place-reach">
             <h2>Location</h2>
@@ -111,14 +110,14 @@
               <div class="col-md-6">
                  
                   <h3>City :</h3>
-                 <h4><?php echo $row['city']; ?></h4><br>
+                 <h4><?php echo htmlspecialchars($current_destination['city']); ?></h4><br>
                 
                  
               </div>
               <div class="col-md-6">
                  
                     <h3>State : </h3>
-                    <h4><?php echo $row['states']; ?></h4><br>
+                    <h4><?php echo htmlspecialchars($current_destination['states']); ?></h4><br>
               
                   
               </div>
@@ -127,16 +126,74 @@
             <div class="budget">  
             <h2>Budget</h2>
             <hr>
-            <p>Average Price Per Head : &#8377;<?php echo $row['budget']; ?></p>
+            <p>Average Price Per Head : &#8377;<?php echo htmlspecialchars($current_destination['budget']); ?></p>
         </div> 
 
             
         </div>
     </div>
 </div>
-<?php
-             }
-      ?> 
+ 
+
+
+
+
+
+
+
+<div class="slider-container">
+
+    <h1 class="related-h1">More Destinations to Visit in <b><?php echo htmlspecialchars($current_destination['states']); ?></b></h1>
+    <hr>
+        <div class="slider">
+        <?php 
+        require 'DB.php';
+        $id = $_GET["place"];
+        $category = $current_destination['states'];
+        $related_query = "SELECT * FROM destination WHERE states = '$category' AND place_id != $id LIMIT 9";
+        $related_query_run = mysqli_query($connection, $related_query);
+        while ($row = mysqli_fetch_assoc($related_query_run)):
+        ?>
+        
+        <div class="col-md-4">
+        <div class="card" style="width: 25rem;">
+          <a href="place.php?place=<?php echo $row['place_id'] ?>">
+            <?php
+            $json = $row['fileImg'];
+            $image = json_decode($json, true);
+            $images = $image['0'];
+            ?>
+            <img src="uploads/<?php echo $images; ?>" class="card-img-top" alt="...">
+          </a>
+          <div class="wrapper">
+              <a href="place.php?place=<?php echo $row['place_id']; ?>"><span>Know More!</span></a>
+         </div>
+          <div class="card-body">
+            <h5 class="card-title"><?php echo htmlspecialchars($row['dest_name']); ?></h5>
+            <?php
+            
+            $sql = "SELECT LEFT(description, 140) AS short_description FROM destination WHERE place_id = " . intval($row['place_id']);
+            $result = $connection->query($sql);
+
+            if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            echo ($row['short_description']); // Convert new lines to <br> for HTML display
+            } else {
+            echo "No data found";
+            }
+            
+            ?>
+          </div>          
+      </div>
+    </div>
+          <?php endwhile; ?>   
+            
+        </div>
+        <div class="buttons">
+            <button id="prev">&#10094;</button>
+            <button id="next">&#10095;</button>
+        </div>
+  </div>
 <!-- Footer Start -->
 <div class="footer">
   <div class="container">
@@ -234,6 +291,63 @@
   </div>
 </div>
 <!-- Footer End -->
+<script>
+       const slider = document.querySelector('.slider');
+const prev = document.getElementById('prev');
+const next = document.getElementById('next');
+const cards = document.querySelectorAll('.col-md-4');
+const cardWidth = 400;
+const visibleCards = 3;
+let index = 0;
+
+// Clone first and last few cards for infinite loop effect
+const totalCards = cards.length;
+const firstClone = [];
+const lastClone = [];
+
+for (let i = 0; i < visibleCards; i++) {
+    let cloneFirst = cards[i].cloneNode(true);
+    let cloneLast = cards[totalCards - 1 - i].cloneNode(true);
+    firstClone.push(cloneFirst);
+    lastClone.push(cloneLast);
+}
+
+// Append cloned cards
+firstClone.forEach(card => slider.appendChild(card));
+lastClone.reverse().forEach(card => slider.insertBefore(card, slider.firstChild));
+
+// Adjust index to match cloned items
+index = visibleCards;
+slider.style.transform = `translateX(-${index * cardWidth}px)`;
+
+next.addEventListener('click', () => {
+    if (index >= totalCards) {
+        setTimeout(() => {
+            slider.style.transition = "none";
+            index = visibleCards;
+            slider.style.transform = `translateX(-${index * cardWidth}px)`;
+        }, 500);
+    }
+
+    index++;
+    slider.style.transition = "transform 0.5s ease-in-out";
+    slider.style.transform = `translateX(-${index * cardWidth}px)`;
+});
+
+prev.addEventListener('click', () => {
+    if (index <= 0) {
+        setTimeout(() => {
+            slider.style.transition = "none";
+            index = totalCards;
+            slider.style.transform = `translateX(-${index * cardWidth}px)`;
+        }, 500);
+    }
+
+    index--;
+    slider.style.transition = "transform 0.5s ease-in-out";
+    slider.style.transform = `translateX(-${index * cardWidth}px)`;
+});
+    </script>
 
      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
      <script type="text/javascript" src="script.js"></script>
@@ -241,3 +355,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
+
