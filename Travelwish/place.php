@@ -155,7 +155,7 @@
         while ($row = mysqli_fetch_assoc($related_query_run)):
         ?>
         
-        <div class="col-md-4">
+        <div class="col">
         <div class="card" style="width: 25rem;">
           <a href="place.php?place=<?php echo $row['place_id'] ?>">
             <?php
@@ -194,159 +194,88 @@
             <button id="next">&#10095;</button>
         </div>
   </div>
-<!-- Footer Start -->
-<div class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-lg-3">
-        <div class="footer-blog">
-          <h3>About TravelWish</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum at eos tempora aliquam labore, fuga nulla voluptatum dolore quos cum minima repellat quia a ut, repudiandae nesciunt laborum, sit excepturi?</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="footer-insta">
-          <h3>From TravelWish</h3>
-          <a href=""><img src="images/Gujarat.jpeg" alt="Image"></a>
-          <a href=""><img src="images/Kerela.jpg" alt="Image"></a>
-          <a href=""><img src="images/Maharashtra.jpg" alt="Image"></a>
-          <a href=""><img src="images/sikkhim.jpg" alt="Image"></a>
-          <a href=""><img src="images/himachal-pradesh.jpg" alt="Image"></a>
-          <a href=""><img src="images/Goa.jpg" alt="Image"></a>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="footer-tags">
-          <h3>Tags Widget</h3>
-          <a href="">Goa</a>
-          <a href="">Sikkhim</a>
-          <a href="">Punjab</a>
-          <a href="">Kerela</a>
-          <a href="">Rajasthan</a>
-          <a href="">Haryana</a>
-          <a href="">Odisha</a>
-          <a href="">Tamil-Nadu</a>
-          <a href="">Telangana</a>
-          <a href="">Manipur</a>
-          <a href="">Assam</a>
-          <a href="">New Delhi</a>
-          <a href="">Jammu-Kashmir</a>
-          <a href="">West-Bengal</a>
-          <a href="">Mizoram</a>
-          <a href="">Tripura</a>
-          <a href="">Meghalaya</a>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="footer-newsletter">
-          <h3>Newsletter</h3>
-          <div class="form">
-            <input class="form-control" placeholder="Your Name">
-            <input class="form-control" placeholder="Your Email">
-            <button class="btn">Subscribe</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="footer-contact">
-      <div class="row align-items-center">
-        <div class="col-md-4">
-          <h4>Call Now</h4>
-          <p>+123 456 7890</p>
-        </div>
-        <div class="col-md-4">
-          <h4>Email Us</h4>
-          <p>info@example.com</p>
-        </div>
-        <div class="col-md-4">
-          <h4>Get in Touch</h4>
-          <a href=""><i class="fab fa-twitter"></i></a>
-          <a href=""><i class="fab fa-facebook-f"></i></a>
-          <a href=""><i class="fab fa-youtube"></i></a>
-          <a href=""><i class="fab fa-instagram"></i></a>
-          <a href=""><i class="fab fa-linkedin-in"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="copyright">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <div class="copy-text">
-            <p>&copy; <a href="#">TravelWish</a>. All Rights Reserved.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="copy-menu">
-            <a href="">Terms</a>
-            <a href="">Privacy</a>
-            <a href="https://htmlcodex.com">Author</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Footer End -->
+  <?php include 'footer.php'; ?>
+
+  
 <script>
        const slider = document.querySelector('.slider');
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
-const cards = document.querySelectorAll('.col-md-4');
-const cardWidth = 400;
-const visibleCards = 3;
-let index = 0;
+const cards = Array.from(document.querySelectorAll('.col'));
+let cardWidth = 410;
+let visibleCards = 3;
+let index = visibleCards;
 
-// Clone first and last few cards for infinite loop effect
-const totalCards = cards.length;
-const firstClone = [];
-const lastClone = [];
+// Function to determine `cardWidth` and `visibleCards` dynamically
+const updateSliderConfig = () => {
+    const screenWidth = window.innerWidth;
 
-for (let i = 0; i < visibleCards; i++) {
-    let cloneFirst = cards[i].cloneNode(true);
-    let cloneLast = cards[totalCards - 1 - i].cloneNode(true);
-    firstClone.push(cloneFirst);
-    lastClone.push(cloneLast);
-}
+    if (screenWidth < 576) {
+        visibleCards = 1;
+        cardWidth = screenWidth * 1; // 90% of screen width
+    } else if (screenWidth < 992) {
+        visibleCards = 2;
+        cardWidth = screenWidth / 2.2;
+    } else {
+        visibleCards = 3;
+        cardWidth = 400;
+    }
 
-// Append cloned cards
-firstClone.forEach(card => slider.appendChild(card));
-lastClone.reverse().forEach(card => slider.insertBefore(card, slider.firstChild));
+    resetSlider();
+};
 
-// Adjust index to match cloned items
-index = visibleCards;
-slider.style.transform = `translateX(-${index * cardWidth}px)`;
+// Function to reset slider when resizing
+const resetSlider = () => {
+    slider.innerHTML = ''; // Clear previous elements
+    let newCards = [...cards]; // Get original cards
+    let firstClone = [];
+    let lastClone = [];
 
-next.addEventListener('click', () => {
-    if (index >= totalCards) {
-        setTimeout(() => {
-            slider.style.transition = "none";
+    for (let i = 0; i < visibleCards; i++) {
+        firstClone.push(newCards[i].cloneNode(true));
+        lastClone.push(newCards[newCards.length - 1 - i].cloneNode(true));
+    }
+
+    // Append cloned elements
+    lastClone.reverse().forEach(card => slider.appendChild(card));
+    newCards.forEach(card => slider.appendChild(card));
+    firstClone.forEach(card => slider.appendChild(card));
+
+    // Adjust index for correct initial position
+    index = visibleCards;
+    slider.style.transition = "none";
+    slider.style.transform = `translateX(-${index * cardWidth}px)`;
+};
+
+// Move slider function
+const moveSlider = (direction) => {
+    index += direction;
+    slider.style.transition = "transform 0.5s ease-in-out";
+    slider.style.transform = `translateX(-${index * cardWidth}px)`;
+
+    // Reset position after transition (for infinite loop effect)
+    setTimeout(() => {
+        if (index >= cards.length + visibleCards) {
             index = visibleCards;
-            slider.style.transform = `translateX(-${index * cardWidth}px)`;
-        }, 500);
-    }
-
-    index++;
-    slider.style.transition = "transform 0.5s ease-in-out";
-    slider.style.transform = `translateX(-${index * cardWidth}px)`;
-});
-
-prev.addEventListener('click', () => {
-    if (index <= 0) {
-        setTimeout(() => {
             slider.style.transition = "none";
-            index = totalCards;
             slider.style.transform = `translateX(-${index * cardWidth}px)`;
-        }, 500);
-    }
+        } else if (index <= 0) {
+            index = cards.length;
+            slider.style.transition = "none";
+            slider.style.transform = `translateX(-${index * cardWidth}px)`;
+        }
+    }, 500);
+};
 
-    index--;
-    slider.style.transition = "transform 0.5s ease-in-out";
-    slider.style.transform = `translateX(-${index * cardWidth}px)`;
-});
+// Event listeners
+next.addEventListener('click', () => moveSlider(1));
+prev.addEventListener('click', () => moveSlider(-1));
+
+// Handle screen resizing
+window.addEventListener('resize', updateSliderConfig);
+
+// Initialize slider
+updateSliderConfig();
     </script>
 
      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

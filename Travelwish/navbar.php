@@ -35,10 +35,16 @@ session_start();
       <a class="logout" href="logout.php">Logout</a>
     <?php endif; ?>
    
-
+    <div class="hamburger">&#9776;</div>
   <!---<button class="reg">Sign up</button>---->
   
 </nav> 
 
+
+<script>
+        document.querySelector(".hamburger").addEventListener("click", function() {
+            document.querySelector(".flist").classList.toggle("active");
+        });
+    </script>
  </body>
  </html>

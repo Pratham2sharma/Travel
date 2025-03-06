@@ -30,9 +30,11 @@
        </div>
 </section>
 
+
+<!-----------States-------------->
 <div class="states">
   <h1>Explore Best Places Of Our Indian States</h1>
-  <div class="row">
+  <div class="row hidden">
     <div class="col">
       <a href="delhi.php"><img src="images/india-gate.jpg" alt=""></a>
       <h2>New Delhi</h2>
@@ -53,13 +55,13 @@
     <a href="jammu&kashmir.php"><img src="images/jammu-kashmir.jpg" alt=""></a>
        <h2>Jammu & Kashmir</h2>
     </div>
-  </div>
-
-  <div class="row">
     <div class="col">
     <a href="haryana.php"><img src="images/haryana.jpeg" alt=""></a>
       <h2>Haryana</h2>
     </div>
+  </div>
+
+  <div class="row hidden">   
     <div class="col">
     <a href="punjab.php"><img src="images/punjab.jpg" alt=""></a>
        <h2>Punjab</h2>
@@ -76,17 +78,17 @@
     <a href="madhyapradesh.php"><img src="images/madhya-pradesh.jpg" alt=""></a>
        <h2>Madhya Pradesh</h2>
     </div>
-  </div>
-
-  <div class="row">
     <div class="col">
-    <a href="karantaka.php"><img src="images/Karnataka.jpg" alt=""></a>
+    <a href="karnataka.php"><img src="images/Karnataka.jpg" alt=""></a>
       <h2>Karnataka</h2>
     </div>
     <div class="col">
     <a href="telengana.php"><img src="images/Telangana.jpeg" alt=""></a>
        <h2>Telangana</h2>
     </div>
+  </div>
+
+  <div class="row hidden">   
     <div class="col">
     <a href="andhrapradesh.php"><img src="images/Andhra-Pradesh.png" alt=""></a>
        <h2>Andhra Pradesh</h2>
@@ -99,9 +101,6 @@
     <a href="jharkhand.php"><img src="images/jharkhand.jpeg" alt=""></a>
        <h2>Jharkhand</h2>
     </div>
-  </div>
-
-  <div class="row">
     <div class="col">
     <a href="westbengal.php"><img src="images/west-bengal.jpeg" alt=""></a>
       <h2>West Bengal</h2>
@@ -114,6 +113,10 @@
     <a href="manipur.php"> <img src="images/manipur.jpg" alt=""></a>
        <h2>Manipur</h2>
     </div>
+  </div>
+
+  <div class="row hidden">
+    
     <div class="col">
     <a href="arunachalpradesh.php"><img src="images/arunachal-pradesh.jpeg" alt=""></a>
        <h2>Arunachal Pradesh</h2>
@@ -122,9 +125,6 @@
     <a href="mizoram.php"><img src="images/mizoram.jpg" alt=""></a>
        <h2>Mirzoram</h2>
     </div>
-</div>  
-
-    <div class="row">
     <div class="col">
     <a href="uttarakhand.php"> <img src="images/uttarakhand.jpg" alt=""></a>
       <h2>Uttarakhand</h2>
@@ -141,13 +141,14 @@
     <a href="sikkim.php"><img src="images/sikkhim.jpg" alt=""></a>
        <h2>Sikkim</h2>
     </div>
+</div>  
+
+    <div class="row hidden">
+    
     <div class="col">
     <a href="nagaland.php"><img src="images/nagaland.jpg" alt=""></a>
        <h2>Nagaland</h2>
     </div>
-  </div>  
-
-    <div class="row">
     <div class="col">
     <a href="tripura.php"><img src="images/tripura.jpg" alt=""></a>
       <h2>Tripura</h2>
@@ -168,18 +169,45 @@
     <a href="andaman&nicobar.php"><img src="images/andaman.jpeg" alt=""></a>
        <h2>Andaman & Nicobar</h2>
     </div>
-
-  </div>
-
-
-
-  
+  </div>  
 
 </div>
 
+<div class="Destination-banner">
+  
+   <div class="row">
+       <div class="col-md-6">
+          <div class="row hidden">
+             <div class="col-md-6">
+                 <img src="images/destination2.jpg" alt="Destination">
+             </div>
+             <div class="col-md-6">
+                 <img src="images/destination1.jpg" alt="Destination">
+             </div>
+          </div>
+          <div class="row hidden">
+             <div class="col-md-6">
+                 <img src="images/destination3.jpg" alt="Destination">
+             </div>
+             <div class="col-md-6">
+                 <img src="images/destination4.jpg" alt="Destination">
+             </div>
+          </div>
+       </div>
+       <div class="col-md-6">
+          <div class="content hidden">
+            <h1>Explore Incredible India: A Journey of Culture and Beauty</h1>
+            <p>From the snow-capped Himalayas in the north to the sun-kissed beaches of Goa in the south, India is a land of diverse landscapes, rich traditions, and unforgettable experiences. Whether you seek the spiritual serenity of Varanasi, the royal grandeur of Rajasthan, or the lush greenery of Kerala, every corner of India has a story to tell. Embark on a journey filled with vibrant festivals, mouthwatering cuisine, and breathtaking heritage sites, and let India captivate your heart like no other destination.</p>
+          </div>
+        </div>
+    </div>
+
+</div>
+
+<!------------Movies------------>
 <div class="movies-index">
-<h2>Explore Your Favourite Movies Places</h2>
-  <div class="row">
+<h2 class="hidden">Explore Your Favourite Movies Places</h2>
+  <div class="row hidden">
         
         
   <div class="col-md-3">
@@ -233,8 +261,8 @@
 
 <!---------Blogs--------------->
 <div class="blog-index">
-    <h2>Read Your Favourite Destination Blogs</h2>
-    <div class="row">
+    <h2 class="hidden">Read Your Favourite Destination Blogs</h2>
+    <div class="row hidden">
  
         <div class="col-md-3">
                   <div class="blog_card">
@@ -287,104 +315,34 @@
     </div>
 </div>  
 
-<!-- Footer Start -->
-<div class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-lg-3">
-        <div class="footer-blog">
-          <h3>About TravelWish</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum at eos tempora aliquam labore, fuga nulla voluptatum dolore quos cum minima repellat quia a ut, repudiandae nesciunt laborum, sit excepturi?</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="footer-insta">
-          <h3>From TravelWish</h3>
-          <a href=""><img src="images/Gujarat.jpeg" alt="Image"></a>
-          <a href=""><img src="images/Kerela.jpg" alt="Image"></a>
-          <a href=""><img src="images/Maharashtra.jpg" alt="Image"></a>
-          <a href=""><img src="images/sikkhim.jpg" alt="Image"></a>
-          <a href=""><img src="images/himachal-pradesh.jpg" alt="Image"></a>
-          <a href=""><img src="images/Goa.jpg" alt="Image"></a>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="footer-tags">
-          <h3>Tags Widget</h3>
-          <a href="">Goa</a>
-          <a href="">Sikkhim</a>
-          <a href="">Punjab</a>
-          <a href="">Kerela</a>
-          <a href="">Rajasthan</a>
-          <a href="">Haryana</a>
-          <a href="">Odisha</a>
-          <a href="">Tamil-Nadu</a>
-          <a href="">Telangana</a>
-          <a href="">Manipur</a>
-          <a href="">Assam</a>
-          <a href="">New Delhi</a>
-          <a href="">Jammu-Kashmir</a>
-          <a href="">West-Bengal</a>
-          <a href="">Mizoram</a>
-          <a href="">Tripura</a>
-          <a href="">Meghalaya</a>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="footer-newsletter">
-          <h3>Newsletter</h3>
-          <div class="form">
-            <input class="form-control" placeholder="Your Name">
-            <input class="form-control" placeholder="Your Email">
-            <button class="btn">Subscribe</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="footer-contact">
-      <div class="row align-items-center">
-        <div class="col-md-4">
-          <h4>Call Now</h4>
-          <p>+123 456 7890</p>
-        </div>
-        <div class="col-md-4">
-          <h4>Email Us</h4>
-          <p>info@example.com</p>
-        </div>
-        <div class="col-md-4">
-          <h4>Get in Touch</h4>
-          <a href=""><i class="fab fa-twitter"></i></a>
-          <a href=""><i class="fab fa-facebook-f"></i></a>
-          <a href=""><i class="fab fa-youtube"></i></a>
-          <a href=""><i class="fab fa-instagram"></i></a>
-          <a href=""><i class="fab fa-linkedin-in"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="copyright">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <div class="copy-text">
-            <p>&copy; <a href="#">TravelWish</a>. All Rights Reserved.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="copy-menu">
-            <a href="">Terms</a>
-            <a href="">Privacy</a>
-            <a href="https://htmlcodex.com">Author</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Footer End -->
+<<?php include 'footer.php'; ?>
 
+
+<script>
+
+// Function to check if an element is in the viewport
+function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top < window.innerHeight * 0.85 && rect.bottom > 0
+            );
+        }
+
+        function handleScroll() {
+            const elements = document.querySelectorAll('.hidden');
+            elements.forEach(el => {
+                if (isInViewport(el)) {
+                    el.classList.add('show');
+                }
+            });
+        }
+
+        // Run function on scroll
+        window.addEventListener('scroll', handleScroll);
+        
+        // Run once in case elements are already in view
+        handleScroll();
+</script> 
     
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

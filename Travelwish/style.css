@@ -20,8 +20,9 @@
     background: #fff;
     color:black;
     display:flex;
-  
+    flex-direction: row;
     padding: 10px;
+   
   }
   
   .first h1{
@@ -63,39 +64,102 @@
     cursor: pointer
   }
 
-  .sign-up{
-    background: black;
-    color: white;
-    text-align: center;
-    border-radius: 10px;
-    text-decoration: none;
-    margin-left: 20%;
-    height: 50px;
-    width: 100px;
-    padding-top: 10px;
-    margin-top: 10px;
-  }
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.sign-up{
+  background: black;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-left: 20%;
+  height: 50px;
+  width: 100px;
+  padding-top: 10px;
+  margin-top: 10px;
+}
 
 
-  /* after login */
-  .username-status{
-    font-size: 15px;
-    font-family: "Urbanist", serif;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 25px;
-    margin-left: 9%;
-  }
+/* after login */
+.username-status{
+  font-size: 15px;
+  font-family: "Urbanist", serif;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 25px;
+  margin-left: 9%;
+}
 
-  .logout{
-    text-decoration: none;
-    color: black;
-    font-family: "Urbanist", serif;
-    font-weight: 600;
-    margin-top: 20px;
-    margin-left: 1%;
-  }
+.logout{
+  text-decoration: none;
+  color: black;
+  font-family: "Urbanist", serif;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: 1%;
+}
 
+
+ /* ---------- Navbar Mobile ----------*/
+  @media screen and (max-width: 768px) {
+    .first{
+      margin-right: -60%;
+    }
+    .flist {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: -33px;
+        width: 100%;
+        background: #333;
+        text-align: center;
+        z-index: 10;
+    }
+    .flist li{
+      color: white;
+    }
+    .flist.active {
+        display: flex;
+        margin-top: 9%;
+        margin-left: 8%;
+    }
+    .hamburger {
+        display: flex;
+        float: right;
+        margin-top: 5%;
+
+    }
+
+    .first h1{
+      margin-top: 5%;
+    }
+
+    .sign-up{
+      height: 50px;
+      width: 100px;
+      font-size: 20px;
+      margin-top: 4%;
+      margin-right: 1%;
+    }
+
+    .username-status{
+      margin-top: 7%;
+      margin-left: 8%;
+      font-size: 10px;
+    }
+   
+    .logout{
+      margin-top: 6%;
+    }
+
+}
+
+  
 
   /* ---Carousel ----*/
 
@@ -192,13 +256,16 @@
 
  .states .row .col{
   position: relative;
-  
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  width: 200px;
  }
 
   .states .row .col img{
     border-radius: 20px;
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     transition: transform .2s; /* Animation */
     filter: brightness(70%);
   }
@@ -252,6 +319,126 @@ border:1px solid black;
 background-color: skyblue;   
 }   
 
+.Destination-banner .row{
+  --bs-gutter-x: 0.5rem;
+}
+
+.Destination-banner .row .col-md-6 img{
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform .2s; /* Animation */
+}
+
+.Destination-banner .row .col-md-6 img:hover{
+  transform: scale(1.3);
+}
+
+.Destination-banner .row .col-md-6 h1{
+  margin-top: 10%;
+  font-size: 50px;
+  font-weight: 600;
+  /*opacity: 0;  /* Initially hidden */
+  /*animation: fadeInUp 1.5s ease-out forwards;*/
+}
+
+
+.Destination-banner .row .col-md-6 p{
+  font-size: 25px;
+  margin-top: 12%;
+  /*opacity: 0;  /* Initially hidden */
+  /*animation: fadeInUp 1.5s ease-out forwards;*/
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*---@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(30px); /* Move text upwards */
+  /*}
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}*/
+
+/*------------Home page mobile -----------------*/
+@media screen and (max-width: 768px) {
+
+  .index-banner h1{
+    text-align: center;
+    margin-left: -32%;
+    font-size: 40px;
+    margin-top: -10%;
+  }  
+  
+  .index-banner h2{
+    text-align: center;
+    margin-left: -28%;
+    font-size: 30px;
+    margin-top: 5%;
+  }  
+
+  .states h1{
+    text-align: center;
+    margin-left: 1%;
+  }
+
+  .states .row{
+    padding-left: 0%;
+  }
+
+  .states .row .col{
+    margin-top: 5px;
+    height: 125px;
+    width: 125px;
+  }
+
+  .states .row .col img{
+    height: 125px;
+    width: 125px;
+  }
+
+  .states .row .col h2{
+    font-size: 15px;
+    left: 10%;
+  }
+
+  .Destination-banner{
+    margin-top: 10%;
+  }
+
+  .Destination-banner .row .col-md-6{
+     display: flex; 
+     margin-left: 5%;
+  }
+
+  .Destination-banner .row .col-md-6 img{
+    height: 150px;
+    width: 150px;
+  }
+
+  
+  .Destination-banner .row .col-md-6 h1{
+    text-align: center;
+  }
+
+  .Destination-banner .row .col-md-6 p{
+    text-align: center;
+  }
+
+}
   /* ------------blog ---------*/
 
 
@@ -355,7 +542,7 @@ background-color: skyblue;
 
 .swiper {
   width: 80%;
-  height: 800px;
+  height: 600px;
   margin: auto;
 }
 .swiper-slide img {
@@ -733,7 +920,8 @@ background-color: skyblue;
 
  .states-body .row .col{
   position: relative;
-  
+  display: flex;
+  flex-direction: row;
  }
 
  .states-body .row .col img{
@@ -1420,6 +1608,11 @@ a:focus {
 @media (max-width: 767.98px) {
   .footer .footer-contact .col-md-4 {
     margin-bottom: 25px;
+
+  }
+
+  .footer{
+    margin-bottom: 70%;
   }
 
   .footer .footer-contact .col-md-4:last-child {
@@ -1484,5 +1677,157 @@ a:focus {
   }
 
 }
+
+
+/*--------------- Explore Page --------------*/
+@media screen and (max-width: 768px) {
+   /*--------------Explore Page--------------*/
+  .carousel{
+    height: 500px;
+  }
+
+  section{
+    height: 500px;
+  }
+
+  .carousel-inner{
+    height: 500px;
+  }
+
+  .carousel-item h1{
+    font-size: 30px;
+    top: 37%;
+  }
+
+  .carousel-item p{
+    top: 45%;
+    font-size: 15px;
+  }
+  
+  .carousel-item button{
+    height: 50px;
+    width: 150px;
+    top: 65%;
+    left: 9%;
+
+  }
+
+  .explore-body{
+    margin-top: 10%;
+  }
+
+  .states-body .row h2{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .states-body .row .col{
+    margin-top: 5px;
+    height: 150px;
+    width: 150px;
+    margin-left: -2%;
+  }
+
+  .states-body .row .col img{
+    height: 150px;
+    width: 150px;
+  }
+
+  .states-body .row .col h2{
+    font-size: 15px;
+    left: 10%;
+  }
+
+
+  /*--------------About US Page ------------*/
+  .banner{
+    height: 450px;
+  }
+
+  .banner img{
+    height: 450px;
+  }
+
+  .banner h1{
+    font-size: 45px;
+    text-align: center;
+    left: 30%;
+  }
+
+  .about-body .row .col-md-5 .pic-2{
+    height: 150px;
+    width: 150px;
+    left: 7%;
+    top: 70%;
+  }
+  .about-body .row .col-md-5 .pic-3{
+    height: 150px;
+    width: 150px;
+    left: 60%;
+    top: 70%;
+  }
+
+  .about-body .row .col-md-7{
+    margin-top: 5%;
+  }
+
+  .about-body .row .col-md-7 h2{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .about-body .row .col-md-7 p{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .our-team-section{
+    height: 60%;
+  }
+
+
+  /*--------------Blog Page ------------*/
+  .banner-blog h1{
+    font-size: 50px;
+    left: 38%;
+  }
+
+  .banner-blog p{
+    font-size: 20px;
+    left: 9%;
+    top: 55%;
+  }
+
+  /*------------Destination Page ---------*/
+  .state-head{
+    margin-top: 10%;
+  }
+
+  .card{
+    margin-left: 4%;
+    height: 430px;
+  }
+
+  .card a img{
+    height: 308px;
+  }
+
+  .wrapper{
+    left: 81%;
+  }
+  .wrapper a{
+     width: 150px;
+  }
+
+  .inline-pagination .input, .pagination-btn{
+    height: 45px;
+    margin-top: 5px;
+  }
+
+  /*------------Destination Details -------------*/
+  .slider{
+
+  }
+}  
 
 
