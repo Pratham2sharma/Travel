@@ -128,19 +128,21 @@
 
    
 
-    $update_query = "UPDATE  movie SET movie_title='$movie_title', description='$description', dest_1='$dest1' , description1='$description1', city1='$city1', states1='$state1',dest_2='$dest2' , description2='$description2', city2='$city2', states2='$state2', dest_3='$dest3' , description3='$description3', city3='$city3', states3='$state3',dest_4='$dest4' , description4='$description4', city4='$city4', states4='$state4', budget='$budget' WHERE movie_id='$id'";
-    $update_query_run = mysqli_query($connection , $update_query);
+    $stmt = $connection->prepare("UPDATE movie SET movie_title=?, description=?, dest_1=? , description1=?, city1=?, states1=?,dest_2=? , description2=?, city2=?, states2=?, dest_3=? , description3=?, city3=?, states3=?,dest_4=? , description4=?, city4=?, states4=?, budget=? WHERE movie_id='$id'");
+    $stmt->bind_param("ssssssssssssssssssi", $movie_title  , $description , $dest1, $description1 , $city1 , $state1,  $dest2, $description2 , $city2 , $state2, $dest3, $description3 , $city3 , $state3 , $dest4, $description4 , $city4 , $state4 , $budget);
 
-    if($update_query_run)
-    {
-        $_SESSION["status"] = "Data Updated Succesfully";
-        header("location: manage_movies.php");
-    }
-    else
-    {
-        $_SESSION["status"] = "Data Updation Failed";
-        header("location: manage_movies.php");
-    }
+    if ($stmt->execute()) {
+      $_SESSION["status"] = "Data Updated Succesfully";
+      header("location: manage_movies.php");
+  } else {
+    $_SESSION["status"] = "Data Updation failed";
+      echo "Error: " . $stmt->error;
+
+  }
+
+   // Step 6: Close the connection
+   $stmt->close();
+   $conn->close();
   }
 
 

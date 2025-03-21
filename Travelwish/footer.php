@@ -16,7 +16,7 @@
       <div class="col-md-6 col-lg-3">
         <div class="footer-blog">
           <h3>About TravelWish</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum at eos tempora aliquam labore, fuga nulla voluptatum dolore quos cum minima repellat quia a ut, repudiandae nesciunt laborum, sit excepturi?</p>
+          <p>Discover the beauty of India with TravelWish, your ultimate travel companion. From majestic mountains to serene beaches, vibrant cities to hidden gems, we bring you expert travel guides, curated itineraries, and insider tips to make your journey unforgettable. Explore, experience, and embrace the magic of India with us!</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
@@ -96,9 +96,8 @@
         </div>
         <div class="col-md-6">
           <div class="copy-menu">
-            <a href="">Terms</a>
-            <a href="">Privacy</a>
-            <a href="https://htmlcodex.com">Author</a>
+            <a href="terms.php">Terms</a>
+            <a href="privacy.php">Privacy</a>
           </div>
         </div>
       </div>

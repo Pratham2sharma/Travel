@@ -217,15 +217,19 @@
    position: absolute;
    left: 10%;
    top: 40%;
-   font-size: 50px;
+   font-size: 70px;
+   font-family: "Urbanist", serif;
+   font-weight: 600;
    color: #fff;
   }
 
   .carousel-item p{
     position: absolute;
     left: 10%;
-    top: 50%;
+    top: 55%;
     color: #fff;
+    font-family: "Urbanist", serif;
+    font-size: 25px;
   }
 
   .carousel-item button{
@@ -239,6 +243,11 @@
     border-radius: 20px;
     color: white;
     padding: 10px 10px;
+  }
+
+  .carousel-item button:hover{
+    background-color: rgba(29, 193, 253, 0.833);
+    transition: all .35s;
   }
 
 
@@ -495,6 +504,7 @@ background-color: skyblue;
   
 .place-body{
   padding: 0 9% 0 9%;
+  margin-top: 5%;
 }
 
 .col-md-6{
@@ -900,7 +910,21 @@ background-color: skyblue;
   font-weight: 550;
   color: black;
 }
+
+/*---------------movies place --------------*/
+.movies-para{
+  font-family: "Urbanist", serif;
+  font-weight: 500;
+  color: black;
+  font-size: 18px;
+}
  
+.movies-location{
+  font-family: "Urbanist", serif;
+  font-weight: 500;
+  color: black;
+  font-size: 18px;
+}
 
  .states-body{
   margin-top: 10%;
@@ -1264,6 +1288,89 @@ height: 100%;
 }
 
 
+
+/*--------Terms Of Use ------------------*/
+
+.terms-head{
+  font-family: "Urbanist", serif;
+  text-align: center;
+  font-weight: 600;
+}
+
+.terms-bottom{
+  font-family: "Urbanist", serif;
+  text-align: center;
+  font-weight: 600;
+}
+
+.terms h2{
+  font-family: "Urbanist", serif;
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 5%;
+}
+
+.terms p{
+  font-family: "Urbanist", serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 5%;
+}
+
+.terms-list{
+  list-style-type: disc;
+  margin-top: 2%;
+}
+
+.terms-list li{
+  font-size: 20px;
+  font-family: "Urbanist", serif;
+  font-weight: 500;
+}
+
+/*--------------Privacy Policy ---------------*/
+.privacy-head{
+  font-family: "Urbanist", serif;
+  text-align: center;
+  font-weight: 600;
+}
+
+.privacy-bottom{
+  font-family: "Urbanist", serif;
+  text-align: center;
+  font-weight: 600;
+}
+
+.privacy h2{
+  font-family: "Urbanist", serif;
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 5%;
+}
+
+.privacy p{
+  font-family: "Urbanist", serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 5%;
+}
+
+.privacy-list{
+  list-style-type: disc;
+  margin-top: 2%;
+}
+
+.privacy-list li{
+  font-size: 20px;
+  font-family: "Urbanist", serif;
+  font-weight: 500;
+}
+
+.privacy-list li span{
+  font-family: "Urbanist", serif;
+  font-weight: bold;
+}
+
 /* ---------Contact Us --------- */
 .contact-body .container{
   width: 100vw;
@@ -1387,6 +1494,51 @@ h4 {
   .contact {
     flex-direction: column;
   }
+}
+
+.faq-container {
+  max-width: 80%;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.faq {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.faq:last-child {
+  border-bottom: none;
+}
+
+.question {
+  font-size: 18px;
+  font-family: "Urbanist", serif;
+  font-weight: 600;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  font-family: "Urbanist", serif;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  padding: 0 10px;
+  background: #f9f9f9;
+  border-left: 4px solid #007BFF;
+}
+
+.faq.active .answer {
+  max-height: 200px; /* Adjust as needed */
+  padding: 10px;
 }
 
  /* ----- Footer -------*/

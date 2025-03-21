@@ -484,3 +484,183 @@ Array
     [movie_id] => 1
                                             
 )
+Array
+(
+    [click_edit_btn] => true
+    [movie_id] => 1
+                                            
+)
+Array
+(
+    [movie_title] => Dil Chahta Hai
+    [description] => Dil Chahta Hai (transl. The Heart Desires) is a 2001 Indian Hindi-language comedy-drama film written and directed by Farhan Akhtar in his directoral debut. It was produced by Ritesh Sidhwani and released under the banner of Excel Entertainment (which Akhtar and Sidhwani co-founded), marking their cinematic debut. The film focuses on a significant transition period in the lives of three college-graduate friends (Aamir Khan, Saif Ali Khan and Akshaye Khanna). It also stars Preity Zinta, Sonali Kulkarni and Dimple Kapadia.
+<br>
+Dil Chahta Hai was based on Akhtar's diary detailing his trips to Mumbai and New York City, and a story by a friend of his, Kassim Jagmagia, who would ultimately become a creative associate at Excel Entertainment. He started writing the screenplay in 1998 but finished it when the film's principal photography was started two years later. The film was produced on a budget of ₹80 million (US$920,000), and filming took place in both India and Australia. It was one of the first films shot in sync sound, with Nakul Kamte and H. Sridhar handling its sound recording. The trio Shankar–Ehsaan–Loy, with lyrics penned by Akhtar's father, Javed Akhtar, composed the soundtrack and the background score.
+    [dest_1] => Chapora Fort 
+    [description1] => Located close to the Vagator beach in Goa, the Chapora fort is one of the most popular tourist attractions of India. This massive fort was built out of red laterite stones and was constructed first by the ruler of Bijapur, Adil Shah. This is one reason why it has been named Shahpura, which means the 'town of Shah'. During the Portugal rule, the fort was built in a grand style and also had underground tunnels to aid in escaping in case of an emergency. After the Portuguese left, the fort was abandoned and never occupied again. Today though mostly in ruins the fort gives a spectacular view of the Vagator and the Anjuna beaches. Many people who come to the beaches visit the Chapora fort just to feel that mystical air and view the sea from the ramparts of the fort.
+    [city1] => Bardez
+    [states1] => Goa
+    [dest_2] => Mahabaleshwar
+    [description2] => It is the summer capital of Mumbai. This picturesque hill station, also known as the Queen of Maharashtra's hill stations & nicknamed the Land of Strawberries is located in the Western Ghats, cradled in the Sahyadri ranges. An altitude of 1,372 m gives it the distinction of being the highest hill station in Western India. Its popularity is not only as a honeymoon spot and a great weekend getaway, but also because of its historical and religious significance. It is the source of River Krishna which flows through Maharashtra, Karnataka and Andhra Pradesh. Mahabaleshwar, is named after Lord Shiva also called Lord Mahabali, enshrined at the Gokarna temple in the form of a self-originated lingam, shaped like a rudraksha, and considered to be the most sacred amongst the other twelve jyothirlingams. Historically, while the region is said to have been discovered by the British, its origins can be traced back to as early as 1215, during the reign of King Singhan of Deogiri. However, what we do know is that the British developed this place as a health resort. If you visit during the strawberry season (October to March), you can see fields with rows of strawberry shrubs.
+    [city2] => Mahabaleshwar
+    [states2] => Maharashtra
+    [dest_3] => Goa
+    [description3] => Goa, India’s coastal paradise, is famous for its stunning beaches, vibrant nightlife, and rich Portuguese heritage. Popular beaches like Baga and Anjuna offer water sports and beachside fun, while historical sites like Basilica of Bom Jesus and Aguada Fort showcase its colonial past. Adventure seekers can explore Dudhsagar Waterfalls and spice plantations. Goa’s nightlife, casinos, and seafood-rich cuisine add to its charm. The best time to visit is from November to February. Easily accessible by air, rail, and road, Goa is a perfect destination for relaxation, adventure, and cultural exploration.
+    [city3] => Panji
+    [states3] => Goa
+    [dest_4] => DudhSagar Falls
+    [description4] => Dudhsagar Falls (lit. 'Sea of Milk') is a four-tiered waterfall on the Mahadayi River in the Indian state of Goa. It is 60km from Panaji by road and is located on the Belagavi–Vasco Da Gama rail route about 46km east of Madgaon and 80km south of Belagavi . Dudhsagar Falls is perched at the top of a crescent shaped valley and surrounded by pristine forests, and it is amongst India's tallest waterfalls with a height of 310 m (1017 feet) and an average width of 30 metres (100 feet).[1] Dudhsagar Falls offers an amazing view, which attracts tourists from around the globe.
+    [city4] => Bhagwan Mahaveer Sanctuary and Mollem National Park
+    [states4] => Goa
+    [budget] => 7500
+    [save_data] => 
+)
+Array
+(
+    [click_edit_btn] => true
+    [movie_id] => 2
+                                            
+)
+Array
+(
+    [movie_id] => 2
+    [movie_title] => Dil Chahta Hai
+    [description] => Dil Chahta Hai (transl. The Heart Desires) is a 2001 Indian Hindi-language comedy-drama film written and directed by Farhan Akhtar in his directoral debut. It was produced by Ritesh Sidhwani and released under the banner of Excel Entertainment (which Akhtar and Sidhwani co-founded), marking their cinematic debut. The film focuses on a significant transition period in the lives of three college-graduate friends (Aamir Khan, Saif Ali Khan and Akshaye Khanna). It also stars Preity Zinta, Sonali Kul
+    [dest_1] => Chapora Fort 
+    [description1] => Located close to the Vagator beach in Goa, the Chapora fort is one of the most popular tourist attractions of India. This massive fort was built out of red laterite stones and was constructed first by the ruler of Bijapur, Adil Shah. This is one reason why it has been named Shahpura, which means the 'town of Shah'. During the Portugal rule, the fort was built in a grand style and also had underground tunnels to aid in escaping in case of an emergency. After the Portuguese left, the fort was aban
+    [city1] => Bardez
+    [states1] => Goa
+    [dest_2] => Mahabaleshwar
+    [description2] => It is the summer capital of Mumbai. This picturesque hill station, also known as the Queen of Maharashtra's hill stations & nicknamed the Land of Strawberries is located in the Western Ghats, cradled in the Sahyadri ranges. An altitude of 1,372 m gives it the distinction of being the highest hill station in Western India. Its popularity is not only as a honeymoon spot and a great weekend getaway, but also because of its historical and religious significance. It is the source of River Krishna whi
+    [city2] => Mahabaleshwar
+    [states2] => Maharashtra
+    [dest_3] => Goa
+    [description3] => Goa, India’s coastal paradise, is famous for its stunning beaches, vibrant nightlife, and rich Portuguese heritage. Popular beaches like Baga and Anjuna offer water sports and beachside fun, while historical sites like Basilica of Bom Jesus and Aguada Fort showcase its colonial past. Adventure seekers can explore Dudhsagar Waterfalls and spice plantations. Goa’s nightlife, casinos, and seafood-rich cuisine add to its charm. The best time to visit is from November to February. Easily accessible b
+    [city3] => Panji
+    [states3] => Goa
+    [dest_4] => DudhSagar Falls
+    [description4] => Dudhsagar Falls (lit. 'Sea of Milk') is a four-tiered waterfall on the Mahadayi River in the Indian state of Goa. It is 60km from Panaji by road and is located on the Belagavi–Vasco Da Gama rail route about 46km east of Madgaon and 80km south of Belagavi . Dudhsagar Falls is perched at the top of a crescent shaped valley and surrounded by pristine forests, and it is amongst India's tallest waterfalls with a height of 310 m (1017 feet) and an average width of 30 metres (100 feet).[1] Dudhsagar Fa
+    [city4] => Bhagwan Mahaveer Sanctuary and Mollem National Park
+    [states4] => Goa
+    [budget] => 7500
+    [update_data] => 
+)
+Array
+(
+    [click_edit_btn] => true
+    [movie_id] => 2
+                                            
+)
+Array
+(
+    [movie_id] => 2
+    [movie_title] => Dil Chahta Hai
+    [description] => Dil Chahta Hai (transl. The Heart Desires) is a 2001 Indian Hindi-language comedy-drama film written and directed by Farhan Akhtar in his directoral debut. It was produced by Ritesh Sidhwani and released under the banner of Excel Entertainment (which Akhtar and Sidhwani co-founded), marking their cinematic debut. The film focuses on a significant transition period in the lives of three college-graduate friends (Aamir Khan, Saif Ali Khan and Akshaye Khanna). It also stars Preity Zinta, Sonali Kul
+    [dest_1] => Chapora Fort 
+    [description1] => Located close to the Vagator beach in Goa, the Chapora fort is one of the most popular tourist attractions of India. This massive fort was built out of red laterite stones and was constructed first by the ruler of Bijapur, Adil Shah. This is one reason why it has been named Shahpura, which means the 'town of Shah'. During the Portugal rule, the fort was built in a grand style and also had underground tunnels to aid in escaping in case of an emergency. After the Portuguese left, the fort was aban
+    [city1] => Bardez
+    [states1] => Goa
+    [dest_2] => Mahabaleshwar
+    [description2] => It is the summer capital of Mumbai. This picturesque hill station, also known as the Queen of Maharashtra's hill stations & nicknamed the Land of Strawberries is located in the Western Ghats, cradled in the Sahyadri ranges. An altitude of 1,372 m gives it the distinction of being the highest hill station in Western India. Its popularity is not only as a honeymoon spot and a great weekend getaway, but also because of its historical and religious significance. It is the source of River Krishna whi
+    [city2] => Mahabaleshwar
+    [states2] => Maharashtra
+    [dest_3] => Goa
+    [description3] => Goa, India’s coastal paradise, is famous for its stunning beaches, vibrant nightlife, and rich Portuguese heritage. Popular beaches like Baga and Anjuna offer water sports and beachside fun, while historical sites like Basilica of Bom Jesus and Aguada Fort showcase its colonial past. Adventure seekers can explore Dudhsagar Waterfalls and spice plantations. Goa’s nightlife, casinos, and seafood-rich cuisine add to its charm. The best time to visit is from November to February. Easily accessible b
+    [city3] => Panji
+    [states3] => Goa
+    [dest_4] => DudhSagar Falls
+    [description4] => Dudhsagar Falls (lit. 'Sea of Milk') is a four-tiered waterfall on the Mahadayi River in the Indian state of Goa. It is 60km from Panaji by road and is located on the Belagavi–Vasco Da Gama rail route about 46km east of Madgaon and 80km south of Belagavi . Dudhsagar Falls is perched at the top of a crescent shaped valley and surrounded by pristine forests, and it is amongst India's tallest waterfalls with a height of 310 m (1017 feet) and an average width of 30 metres (100 feet).[1] Dudhsagar Fa
+    [city4] => Bhagwan Mahaveer Sanctuary and Mollem National Park
+    [states4] => Goa
+    [budget] => 7500
+    [update_data] => 
+)
+Array
+(
+    [click_edit_btn] => true
+    [movie_id] => 2
+                                            
+)
+Array
+(
+    [movie_id] => 2
+    [movie_title] => Dil Chahta Hai
+    [description] => Dil Chahta Hai (transl. The Heart Desires) is a 2001 Indian Hindi-language comedy-drama film written and directed by Farhan Akhtar in his directoral debut. It was produced by Ritesh Sidhwani and released under the banner of Excel Entertainment (which Akhtar and Sidhwani co-founded), marking their cinematic debut. The film focuses on a significant transition period in the lives of three college-graduate friends (Aamir Khan, Saif Ali Khan and Akshaye Khanna). It also stars Preity Zinta, Sonali Kul
+    [dest_1] => Chapora Fort 
+    [description1] => Located close to the Vagator beach in Goa, the Chapora fort is one of the most popular tourist attractions of India. This massive fort was built out of red laterite stones and was constructed first by the ruler of Bijapur, Adil Shah. This is one reason why it has been named Shahpura, which means the 'town of Shah'. During the Portugal rule, the fort was built in a grand style and also had underground tunnels to aid in escaping in case of an emergency. After the Portuguese left, the fort was aban
+    [city1] => Bardez
+    [states1] => Goa
+    [dest_2] => Mahabaleshwar
+    [description2] => It is the summer capital of Mumbai. This picturesque hill station, also known as the Queen of Maharashtra's hill stations & nicknamed the Land of Strawberries is located in the Western Ghats, cradled in the Sahyadri ranges. An altitude of 1,372 m gives it the distinction of being the highest hill station in Western India. Its popularity is not only as a honeymoon spot and a great weekend getaway, but also because of its historical and religious significance. It is the source of River Krishna whi
+    [city2] => Mahabaleshwar
+    [states2] => Maharashtra
+    [dest_3] => Goa
+    [description3] => Goa, India’s coastal paradise, is famous for its stunning beaches, vibrant nightlife, and rich Portuguese heritage. Popular beaches like Baga and Anjuna offer water sports and beachside fun, while historical sites like Basilica of Bom Jesus and Aguada Fort showcase its colonial past. Adventure seekers can explore Dudhsagar Waterfalls and spice plantations. Goa’s nightlife, casinos, and seafood-rich cuisine add to its charm. The best time to visit is from November to February. Easily accessible b
+    [city3] => Panji
+    [states3] => Goa
+    [dest_4] => DudhSagar Falls
+    [description4] => Dudhsagar Falls (lit. 'Sea of Milk') is a four-tiered waterfall on the Mahadayi River in the Indian state of Goa. It is 60km from Panaji by road and is located on the Belagavi–Vasco Da Gama rail route about 46km east of Madgaon and 80km south of Belagavi . Dudhsagar Falls is perched at the top of a crescent shaped valley and surrounded by pristine forests, and it is amongst India's tallest waterfalls with a height of 310 m (1017 feet) and an average width of 30 metres (100 feet).[1] Dudhsagar Fa
+    [city4] => Bhagwan Mahaveer Sanctuary
+    [states4] => Goa
+    [budget] => 7500
+    [update_data] => 
+)
+Array
+(
+    [movie_title] => Go  Goa Gone
+    [description] => Go Goa Gone is a 2013 Indian Hindi-language zombie action comedy film directed by Raj and D.K. The film features Saif Ali Khan, Kunal Khemu, Vir Das, Anand Tiwari and Puja Gupta. It was released on 10 May 2013.[3] Almost one third of the film was shot in Mauritius.[4] It is the first Indian zombie film and has also been described as India's first stoner film. Go Goa Gone was successful at the box office. It received mixed reviews, but it received praise for its pacing, editing, and use of zombies, though the screenplay and the second act received criticism. The film became a cult film over the years. A sequel titled Go Goa Gone 2 was announced, but as of 2024, the film is not in production.
+    [dest_1] => Dona Paula Jetty
+    [description1] => Dona Paula is a popular tourist spot in Goa, known for its scenic beauty, romantic legends, and stunning sea views. Located near Panaji, this picturesque spot offers breathtaking views of the Arabian Sea and is famous for the Dona Paula Jetty and the National Institute of Oceanography. The place is named after Dona Paula de Menezes, a Portuguese noblewoman, and has a romantic legend associated with it, making it a favorite among couples. Visitors can enjoy water sports, visit the nearby Miramar Beach, or explore local markets. The sunset views from Dona Paula are especially mesmerizing.
+    [city1] => Panaji
+    [states1] => Goa
+    [dest_2] => Arpora Market
+    [description2] => Arpora Market, also known as the Saturday Night Market, is one of Goa’s most vibrant shopping and entertainment hubs. Located in Arpora, near Baga and Anjuna, this market comes alive every Saturday evening with a mix of stalls selling handicrafts, jewelry, clothing, souvenirs, and local Goan delicacies. It's also famous for live music, street performances, and a variety of food stalls offering global cuisines. The market has a lively, bohemian vibe, attracting both tourists and locals. Open from November to April, it’s a must-visit for those looking to experience Goa’s nightlife beyond beaches and clubs.
+    [city2] => North Goa
+    [states2] => Goa
+    [dest_3] => Parra Road
+    [description3] => Parra, a picturesque village in North Goa, is famous for its scenic beauty and iconic coconut tree-lined road, which gained popularity through Bollywood movies and social media. Located near Mapusa and close to popular beaches like Anjuna and Baga, Parra offers a peaceful escape from Goa’s busy tourist hubs. The village is known for its lush green fields, traditional Goan houses, and serene countryside vibes. It’s a great spot for photography, cycling, and experiencing Goa’s local charm. If you’re looking for a quiet, scenic drive, Parra’s palm-fringed road is a must-visit!
+    [city3] => Parra
+    [states3] => Goa
+    [dest_4] => Goa City
+    [description4] => Goa, India’s smallest state, is a tropical paradise known for its stunning beaches, vibrant nightlife, Portuguese heritage, and laid-back vibe. Popular beaches like Baga, Anjuna, and Palolem offer water sports, beach shacks, and breathtaking sunsets. The state is rich in history, with attractions like the Basilica of Bom Jesus, Aguada Fort, and Chapora Fort. Adventure seekers can explore Dudhsagar Waterfalls, spice plantations, and wildlife sanctuaries. Goa’s lively markets, seafood-rich cuisine, and nightlife make it a favorite among travelers. Best visited between November and February, it’s easily accessible by air, rail, and road, offering the perfect mix of relaxation and adventure.
+    [city4] => Goa
+    [states4] => Goa
+    [budget] => 6000
+    [save_data] => 
+)
+Array
+(
+    [click_delete_btn] => true
+    [movie_id] => 1
+                                            
+)
+Array
+(
+    [click_edit_btn] => true
+    [movie_id] => 3
+                                            
+)
+Array
+(
+    [movie_id] => 3
+    [movie_title] => Go  Goa Gone
+    [description] => Go Goa Gone is a 2013 Indian Hindi-language zombie action comedy film directed by Raj and D.K. The film features Saif Ali Khan, Kunal Khemu, Vir Das, Anand Tiwari and Puja Gupta. It was released on 10 May 2013.[3] Almost one third of the film was shot in Mauritius.[4] It is the first Indian zombie film and has also been described as India's first stoner film. Go Goa Gone was successful at the box office. It received mixed reviews, but it received praise for its pacing, editing, and use of zombie
+    [dest_1] => Arpora Market
+    [description1] => Arpora Market, also known as the Saturday Night Market, is one of Goa’s most vibrant shopping and entertainment hubs. Located in Arpora, near Baga and Anjuna, this market comes alive every Saturday evening with a mix of stalls selling handicrafts, jewelry, clothing, souvenirs, and local Goan delicacies. It's also famous for live music, street performances, and a variety of food stalls offering global cuisines. The market has a lively, bohemian vibe, attracting both tourists and locals.
+    [city1] => North Goa
+    [states1] => Goa
+    [dest_2] => Dona Paula Jetty
+    [description2] => Dona Paula is a popular tourist spot in Goa, known for its scenic beauty, romantic legends, and stunning sea views. Located near Panaji, this picturesque spot offers breathtaking views of the Arabian Sea and is famous for the Dona Paula Jetty and the National Institute of Oceanography. The place is named after Dona Paula de Menezes, a Portuguese noblewoman, and has a romantic legend associated with it, making it a favorite among couples. Visitors can enjoy water sports, visit the nearby Miramar Beach, or explore local markets. The sunset views from Dona Paula are especially mesmerizing.
+    [city2] => Panaji
+    [states2] => Goa
+    [dest_3] => Goa
+    [description3] => Goa, India’s smallest state, is a tropical paradise known for its stunning beaches, vibrant nightlife, Portuguese heritage, and laid-back vibe. Popular beaches like Baga, Anjuna, and Palolem offer water sports, beach shacks, and breathtaking sunsets. The state is rich in history, with attractions like the Basilica of Bom Jesus, Aguada Fort, and Chapora Fort. Adventure seekers can explore Dudhsagar Waterfalls, spice plantations, and wildlife sanctuaries. Goa’s lively markets, seafood-rich cuisine, and nightlife make it a favorite among travelers. Best visited between November and February, it’s easily accessible by air, rail, and road, offering the perfect mix of relaxation and adventure.
+    [city3] => Goa
+    [states3] => Goa
+    [dest_4] => Parra Road
+    [description4] => Parra, a picturesque village in North Goa, is famous for its scenic beauty and iconic coconut tree-lined road, which gained popularity through Bollywood movies and social media. Located near Mapusa and close to popular beaches like Anjuna and Baga, Parra offers a peaceful escape from Goa’s busy tourist hubs. The village is known for its lush green fields, traditional Goan houses, and serene countryside vibes. It’s a great spot for photography, cycling, and experiencing Goa’s local charm
+    [city4] => Parra
+    [states4] => Goa
+    [budget] => 6000
+    [update_data] => 
+)

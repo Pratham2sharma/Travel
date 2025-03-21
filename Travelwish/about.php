@@ -27,9 +27,10 @@
         <div class="col-md-7">
             <h2>About Us</h2>
             <hr>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit consequuntur porro recusandae similique temporibus! Dolorum vitae culpa ipsam optio doloribus, unde fugit dolores officiis tenetur? Omnis explicabo magnam maxime cumque!</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit consequuntur porro recusandae similique temporibus! Dolorum vitae culpa ipsam optio doloribus, unde fugit dolores officiis tenetur? Omnis explicabo magnam maxime cumque!</p> 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit consequuntur porro recusandae similique temporibus! Dolorum vitae culpa ipsam optio doloribus, unde fugit dolores officiis tenetur? Omnis explicabo magnam maxime cumque!</p>
+            <p>Welcome to <b>TravelWish</b>, your trusted travel guide to exploring the incredible beauty of India. Our mission is to inspire and assist travelers in discovering the diverse landscapes, rich heritage, and vibrant cultures that make India truly unique.</p>
+            <p>Whether you're seeking adventure in the Himalayas, a peaceful retreat in Kerala, or a cultural journey through Rajasthan, we provide expert travel guides, curated itineraries, and insider tips to enhance your experience.</p> 
+            <p>At <b>TravelWish</b>, we believe travel is more than just visiting places—it's about creating memories, embracing new cultures, and finding hidden gems. Our team of travel enthusiasts and experts work tirelessly to bring you up-to-date information, local insights, and personalized recommendations to make your journey seamless and unforgettable.</p>
+            <p>Join us in exploring the magic of India—one destination at a time!</p> 
         </div>
     </div>
 </div>

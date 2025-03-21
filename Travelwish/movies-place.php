@@ -73,7 +73,7 @@
            ?>
   <div class="place-body">
     <div class="row">
-     <div class="col-md-6">
+     <div class="col-md-8">
       <div class="place-title">
           <h1><?php echo $row['movie_title']; ?></h1>
             <hr>
@@ -83,7 +83,7 @@
 
 
           <div class="tips-place">
-            <h2>Movie Shots Here</h2>
+            <h2>Movie Shots Here :</h2>
             <hr>
             <?php
                     $json = $row['fileImg'];
@@ -92,15 +92,15 @@
                   ?>
                    <img src="uploads/<?php echo $images;  ?>" class="card-img-top" alt="...">
             <h3><?php echo $row['dest_1']; ?></h3>
-            <p><?php echo $row['description1']; ?></p>
+            <p class="movies-para"><?php echo $row['description1']; ?></p>
             <div class="row">
               <div class="col-md-6">
                  <h4>City :</h4>
-                 <p><?php echo $row['city1']; ?></p>
+                 <p class="movies-location"><?php echo $row['city1']; ?></p>
               </div>
               <div class="col-md-6">
                 <h4>State :</h4>
-                <p><?php echo $row['states1']; ?></p>
+                <p class="movies-location"><?php echo $row['states1']; ?></p>
               </div>
             </div>  
 
@@ -112,15 +112,15 @@
                   ?>
                    <img src="uploads/<?php echo $images;  ?>" class="card-img-top" alt="...">
             <h3><?php echo $row['dest_2']; ?></h3>
-            <p><?php echo $row['description2']; ?></p>
+            <p class="movies-para"><?php echo $row['description2']; ?></p>
             <div class="row">
               <div class="col-md-6">
                  <h4>City :</h4>
-                 <p><?php echo $row['city2']; ?></p>
+                 <p class="movies-location"><?php echo $row['city2']; ?></p>
               </div>
               <div class="col-md-6">
                 <h4>State :</h4>
-                <p><?php echo $row['states2']; ?></p>
+                <p class="movies-location"><?php echo $row['states2']; ?></p>
               </div>
             </div>  
 
@@ -128,19 +128,19 @@
             <?php
                     $json = $row['fileImg'];
                     $image = json_decode($json, true);
-                    $images = $image['2'];
+                    $images = $image['4'];
                   ?>
                    <img src="uploads/<?php echo $images;  ?>" class="card-img-top" alt="...">
             <h3><?php echo $row['dest_3']; ?></h3>
-            <p><?php echo $row['description3']; ?></p>
+            <p class="movies-para"><?php echo $row['description3']; ?></p>
             <div class="row">
               <div class="col-md-6">
                  <h4>City :</h4>
-                 <p><?php echo $row['city3']; ?></p>
+                 <p class="movies-location"><?php echo $row['city3']; ?></p>
               </div>
               <div class="col-md-6">
                 <h4>State :</h4>
-                <p><?php echo $row['states3']; ?></p>
+                <p class="movies-location"><?php echo $row['states3']; ?></p>
               </div>
             </div>  
 
@@ -148,31 +148,27 @@
             <?php
                     $json = $row['fileImg'];
                     $image = json_decode($json, true);
-                    $images = $image['3'];
+                    $images = $image['5'];
                   ?>
                    <img src="uploads/<?php echo $images;  ?>" class="card-img-top" alt="...">
             <h3><?php echo $row['dest_4']; ?></h3>
-            <p><?php echo $row['description4']; ?></p>
+            <p class="movies-para"><?php echo $row['description4']; ?></p>
             <div class="row">
               <div class="col-md-6">
                  <h4>City :</h4>
-                 <p><?php echo $row['city4']; ?></p>
+                 <p class="movies-location"><?php echo $row['city4']; ?></p>
               </div>
               <div class="col-md-6">
                 <h4>State :</h4>
-                <p><?php echo $row['states4']; ?></p>
+                <p class="movies-location"><?php echo $row['states4']; ?></p>
               </div>
             </div>  
          </div> 
     </div>
 
-        <div class="col-md-6">
+        <div class="col-md-4">
            
-          <div class="best-time">
-            <h1>Best Time to Visit</h2>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis maxime quidem error eum vitae corporis minus odio incidunt quisquam inventore, explicabo at eius voluptate eveniet? Recusandae, sint! Magni, omnis beatae.</p>
-          </div>
+        
             
          <div class="budget">  
             <h2>Budget</h2>

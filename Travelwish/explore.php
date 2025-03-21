@@ -23,20 +23,20 @@
             <div class="carousel-item active">
               <img src="images/carousel-1.jpeg" class="d-block w-100" alt="...">
               <h1 class="banner-title">Explore Mountains</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In veritatis quia tempore officia voluptate vero sapiente accusantium exercitationem, non esse! Modi repellendus mollitia recusandae ex vel inventore quod odio repudiandae.</p>
-              <button>Explore Now</button>
+              <p>From misty peaks to lush valleys, Indian mountains offer serene escapes, thrilling adventures, and breathtaking views for the perfect retreat!</p>
+              <a href="mountains.php"><button>Explore Now</button></a>
             </div>
             <div class="carousel-item">
               <img src="images/carousel-2.jpeg" class="d-block w-100" alt="...">
               <h1 class="banner-title">Explore Beaches</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In veritatis quia tempore officia voluptate vero sapiente accusantium exercitationem, non esse! Modi repellendus mollitia recusandae ex vel inventore quod odio repudiandae.</p>
-              <button>Explore Now</button>
+              <p>From golden sands to turquoise waves, Indian beaches offer sun-kissed shores, thrilling adventures, and breathtaking sunsets for the perfect escape!</p>
+              <a href="beaches.php"><button>Explore Now</button></a>
             </div>
             <div class="carousel-item">
               <img src="images/carousel-3.jpg" class="d-block w-100" alt="...">
               <h1 class="banner-title">Explore Palaces</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In veritatis quia tempore officia voluptate vero sapiente accusantium exercitationem, non esse! Modi repellendus mollitia recusandae ex vel inventore quod odio repudiandae.</p>
-              <button>Explore Now</button>
+              <p>Step into a royal legacy—India’s palaces dazzle with grandeur, rich history, and timeless elegance, offering a glimpse into the past’s opulence!</p>
+              <a href="palaces.php"><button>Explore Now</button></a>
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -103,7 +103,7 @@
               <?php
                     $json = $row['fileImg'];
                     $image = json_decode($json, true);
-                    $images = $image['0'];
+                    $images = $image['3'];
                   ?>
                    <img src="uploads/<?php echo $images;  ?>" class="card-img-top" alt="...">
               </a>
@@ -120,54 +120,8 @@
         
        ?> 
 
-        <div class="col-md-4">
-        <div class="blog_card">
-              <div class="blog_card_image">
-              <a href=""><img src="images/go-goa-gone.jpeg" alt=""></a>
-              </div>
-              <div class="blog_card_content">
-                 <h3>Go Goa Gone</h3> 
-               
-              </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-        <div class="blog_card">
-              <div class="blog_card_image">
-              <a href=""><img src="images/yeh-jawaani.jpg" alt=""></a>
-              </div>
-              <div class="blog_card_content">
-                 <h3>Yeh Jawaani hai Deewani</h3> 
-                 
-              </div>
-            </div>
-        </div>
-       
-        
-    </div>
-    <div class="row">
-        <div class="col-md-4">
-        <div class="blog_card">
-              <div class="blog_card_image">
-              <a href=""><img src="images/go-goa-gone.jpeg" alt=""></a>
-              </div>
-              <div class="blog_card_content">
-                 <h3>Go Goa Gone</h3> 
-               
-              </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-        <div class="blog_card">
-              <div class="blog_card_image">
-              <a href=""><img src="images/yeh-jawaani.jpg" alt=""></a>
-              </div>
-              <div class="blog_card_content">
-                 <h3>Yeh Jawaani hai Deewani</h3> 
-                 
-              </div>
-            </div>
-        </div>
+     
+    
        
         
     </div>

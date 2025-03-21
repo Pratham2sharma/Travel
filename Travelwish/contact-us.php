@@ -52,6 +52,26 @@
   </div>
 </div>
 
+<div class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq">
+            <div class="question">Want To Promote Your Property near These Destination On Wesbite? <span>+</span></div>
+            <div class="answer">Yes, you can Promote your Properties on our Website. Just Contact Us Through Contact Form or Email.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question">Best time to visit Goa? <span>+</span></div>
+            <div class="answer">The best time to visit Goa is from November to February when the weather is pleasant.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question">What are the must-visit places in India? <span>+</span></div>
+            <div class="answer">India is a land of diverse beauty, from the iconic Taj Mahal in Agra to the royal forts of Jaipur. Experience spirituality in Varanasi, cruise through Kerala’s backwaters, or relax on Goa’s beaches. Adventure awaits in Leh-Ladakh, while the Rann of Kutch stuns with its white desert. Mysore’s palace, Andaman’s turquoise waters, and Meghalaya’s waterfalls offer unique experiences. Whether exploring history, nature, or vibrant culture, India has something for every traveler.</div>
+        </div>
+
+    </div>
+
 
 
 
@@ -59,6 +79,16 @@
 
 <?php include 'footer.php'; ?>
 
+<script>
+        document.querySelectorAll(".question").forEach(question => {
+            question.addEventListener("click", function() {
+                const faq = this.parentElement;
+                faq.classList.toggle("active");
+                const span = this.querySelector("span");
+                span.textContent = faq.classList.contains("active") ? "-" : "+";
+            });
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
